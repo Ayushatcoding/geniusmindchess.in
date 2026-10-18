@@ -1,0 +1,72 @@
+{
+  "passed": 8,
+  "failed": 0,
+  "bugs": [],
+  "action_items": [],
+  "retest_needed": false,
+  "checks": [
+    {
+      "criterion": "Single-page academy site shows the required section order and branded sticky navigation",
+      "name": "academy-section-navigation",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Persisted browser check passed: required section order and Fees nav link were present; sticky navigation and active-section behavior verified."
+    },
+    {
+      "criterion": "Official GMCA logo is used consistently",
+      "name": "academy-logo-assets",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Persisted browser check passed: header, footer, and hero emblem rendered with resolved non-zero logo assets."
+    },
+    {
+      "criterion": "Home and trust content are present",
+      "name": "academy-home-trust-content",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Persisted browser check passed: hero messaging, trial/WhatsApp CTAs, 4.8/43 rating, Est. 2011, community metric, testimonial preview, and tournament preview verified."
+    },
+    {
+      "criterion": "About, coaches, programs, and fees content matches the supplied facts",
+      "name": "academy-programs-coaches-fees",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Persisted browser check passed: ten benefits, both coach cards/placeholders, five Online + Offline programs, no fee numbers, and fees WhatsApp CTA verified."
+    },
+    {
+      "criterion": "Tournament and testimonial content is accurate",
+      "name": "academy-tournament-testimonials",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Persisted browser check passed: tournament details/registration copy and all five named reviews with 4.8/43 badge verified."
+    },
+    {
+      "criterion": "Gallery and contact details are complete and responsive",
+      "name": "academy-gallery-contact-details",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Persisted browser check passed: four lazy gallery images, awaiting-photos label, complete contact details, owner-confirmation note, and Noida multi-location wording verified."
+    },
+    {
+      "criterion": "Contact form persists a valid enquiry and gives feedback",
+      "name": "academy-contact-form-saves-enquiry",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Persisted browser check passed: valid form submission displayed inline saved-success feedback and WhatsApp chat link."
+    },
+    {
+      "criterion": "Contact form persists a valid enquiry and gives feedback",
+      "name": "test_tscheck_contact_enquiry",
+      "lane": "backend",
+      "status": "passed",
+      "evidence": "pytest HTTP suite passed: POST /api/enquiries valid payload returned 201 with matching fields/id/timestamp; empty required fields returned 422."
+    },
+    {
+      "criterion": "Mobile navigation and WhatsApp affordances work",
+      "name": "academy-mobile-navigation-whatsapp",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Persisted browser check passed at 390px: hamburger opened, section link closed menu and navigated, floating WhatsApp href resolved to wa.me/919953048933."
+    }
+  ]
+}

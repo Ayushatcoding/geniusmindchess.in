@@ -1,0 +1,25 @@
+{
+  "callMeBot": {
+    "enabled": false,
+    "phone": "",
+    "apiKey": ""
+  },
+  "googleDrive": {
+    "apiKey": "AIzaSyBrcI1raH_73mmIENdoPRLe7QxSSE2C1Ws",
+    "folderId": "1Nh6a_UDmOsT-QK1pXGuojOJF0cbUuX7A"
+  },
+  "googleSheets": {
+    "scheduleCsvUrl": "https://docs.google.com/spreadsheets/d/e/2PACX-1vRrDGNgxD1UKdlALZcpNAz7NllUVzyjOi66LyaeP9ohsZ7V3Gjjc2OHY_FedHEFhu3rxgCSf2awgmR7/pub?gid=0&single=true&output=csv",
+    "tournamentsCsvUrl": "https://docs.google.com/spreadsheets/d/e/2PACX-1vRrDGNgxD1UKdlALZcpNAz7NllUVzyjOi66LyaeP9ohsZ7V3Gjjc2OHY_FedHEFhu3rxgCSf2awgmR7/pub?gid=1390832593&single=true&output=csv",
+    "testimonialsCsvUrl": "https://docs.google.com/spreadsheets/d/e/2PACX-1vRrDGNgxD1UKdlALZcpNAz7NllUVzyjOi66LyaeP9ohsZ7V3Gjjc2OHY_FedHEFhu3rxgCSf2awgmR7/pub?gid=989310905&single=true&output=csv"
+  },
+  "googleMaps": {
+    "embedApiKey": "AIzaSyD9qDDC79UbNapCxWkFSHS5pRYakaNZvjI",
+    "placeId": "ChIJKXIYhZvoDDkRE316HEPtA3I",
+    "query": "BL-8, Sector 116, Noida, UP 201301"
+  },
+  "googlePlaces": {
+    "apiKey": "AIzaSyDpQYyg-WMw6jR9EVvnoumDAnKt3ji11AI",
+    "placeId": "ChIJKXIYhZvoDDkRE316HEPtA3I"
+  }
+}

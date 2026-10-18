@@ -1,0 +1,22 @@
+{
+  "passed": 1,
+  "failed": 0,
+  "bugs": [],
+  "action_items": [
+    {
+      "type": "backend_broken_out_of_scope",
+      "severity": "info",
+      "detail": "Backend service (supervisor 'backend', uvicorn server:app on :8001) is currently down: /app/backend/server.py is missing (only lib/, models/, routers/, tests/, __pycache__ exist at /app/backend), so uvicorn fails with 'Error loading ASGI app. Could not import module server' and http://localhost:8001/api/ returns no response after supervisorctl restart. This is unrelated to the current single acceptance criterion (static header logo, no backend dependency) and was not exercised by this iteration's check, but it will block any future contact-form/enquiry criteria (previously covered in iteration_2 by academy-contact-form-saves-enquiry) until server.py is restored."
+    }
+  ],
+  "retest_needed": false,
+  "checks": [
+    {
+      "criterion": "Header logo is fully visible on desktop and mobile",
+      "name": "header-logo-visible-desktop-mobile",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "At 1280x720 and 390x844, header-logo-frame and header-full-logo-image were visible; src resolved to /gmca-logo.webp; naturalWidth/naturalHeight > 0 at both sizes; computed object-fit = 'contain'; image bounding box stayed within the frame's bounding box (no overflow/clip) at both viewports. Screenshots confirm full crest + text banner lockup rendered without clipping."
+    }
+  ]
+}

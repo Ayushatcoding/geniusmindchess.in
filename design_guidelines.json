@@ -1,0 +1,245 @@
+{
+  "project_info": {
+    "name": "Genius Mind Chess Academy (GMCA)",
+    "type": "Single-Page Responsive Academy Website with Backend Enquiry Handling",
+    "location": "Noida, Uttar Pradesh, India",
+    "established_year": "2011",
+    "contact": {
+      "phone_whatsapp": "+91 99530 48933",
+      "email": "geniusmindchess@gmail.com",
+      "google_rating": "4.8★ (43 Google Reviews)",
+      "community": "1.9K+ Facebook Community"
+    }
+  },
+  "design_direction": {
+    "conflict_resolution": "Prioritized user choice: Logo exact royal blue (#0B3B60 / #1E40AF) on crisp white/light ivory background over dark green. Logo areas must remain light-colored to accommodate the blue-and-white circular emblem.",
+    "theme": "Warm, trustworthy, achievement-oriented educational aesthetic suited for young learners, parents, and competitive players.",
+    "background_style": "Subtle vector chessboard grids, soft radial gradients, delicate geometric pawn/king watermark patterns on light ivory/white surfaces.",
+    "border_and_corners": "Rounded-xl (12px) for cards, rounded-full for pills and CTAs, crisp 1px subtle borders (slate-200 / blue-100)."
+  },
+  "color_palette": {
+    "primary_brand": {
+      "name": "Academy Royal Blue",
+      "hex": "#0B3B60",
+      "tw": "bg-[#0B3B60] text-white",
+      "usage": "Header branding, section titles, primary CTA background, logo container accent"
+    },
+    "secondary_blue": {
+      "name": "Vibrant Cobalt Blue",
+      "hex": "#2563EB",
+      "tw": "bg-blue-600 text-white",
+      "usage": "Interactive states, active tab indicators, link hover"
+    },
+    "accent_gold": {
+      "name": "Trophy Gold",
+      "hex": "#D97706",
+      "tw": "bg-amber-600 text-white hover:bg-amber-700",
+      "usage": "Trial Class CTA, Tournament prizes, rating badge, achievement highlights"
+    },
+    "background_light": {
+      "name": "Ivory White / Crisp Off-White",
+      "hex": "#F8FAFC",
+      "tw": "bg-slate-50",
+      "usage": "Main body background, card backgrounds, light hero background"
+    },
+    "card_background": {
+      "name": "Pure White",
+      "hex": "#FFFFFF",
+      "tw": "bg-white",
+      "usage": "Feature cards, testimonial cards, enquiry form container"
+    },
+    "text_dark": {
+      "name": "Deep Slate Charcoal",
+      "hex": "#0F172A",
+      "tw": "text-slate-900",
+      "usage": "Primary headings and readable high-contrast body text"
+    },
+    "text_muted": {
+      "name": "Muted Slate",
+      "hex": "#475569",
+      "tw": "text-slate-600",
+      "usage": "Subtitles, meta information, captions, card descriptions"
+    },
+    "whatsapp_green": {
+      "name": "WhatsApp Green",
+      "hex": "#25D366",
+      "tw": "bg-[#25D366] hover:bg-[#20ba5a] text-white",
+      "usage": "Floating WhatsApp button, instant WhatsApp chat links"
+    }
+  },
+  "typography": {
+    "heading_font": "Merriweather / Cormorant Garamond / Playfair Display (Serif / Slab-Serif for academic prestige & authority)",
+    "body_font": "Inter / Plus Jakarta Sans (Clean, high-legibility sans-serif)",
+    "scale": {
+      "hero_title": "text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-tight",
+      "section_heading": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-slate-900",
+      "subsection_title": "text-xl sm:text-2xl font-semibold text-slate-900",
+      "card_title": "text-lg sm:text-xl font-bold text-slate-900",
+      "body_text": "text-base leading-relaxed text-slate-600",
+      "caption": "text-sm text-slate-500 font-medium"
+    }
+  },
+  "layout_and_navigation": {
+    "architecture": "Single-page anchored navigation with active scrollspy and smooth scrolling.",
+    "section_order": [
+      "Home",
+      "About",
+      "Coaches",
+      "Programs",
+      "Fees",
+      "Tournaments",
+      "Testimonials",
+      "Gallery",
+      "Contact"
+    ],
+    "header": {
+      "type": "Sticky top navigation with glassmorphism (backdrop-blur-md bg-white/90 border-b border-slate-200/80 z-50)",
+      "elements": [
+        "Swappable Official Logo slot (blue-and-white circular emblem with king's crown/cross)",
+        "Desktop Nav Links with active-section indicator dot/underline",
+        "Nav CTA Button ('Book Trial Class')",
+        "Mobile Hamburger Drawer closing automatically on link click"
+      ]
+    }
+  },
+  "section_details": {
+    "1_home": {
+      "hero": {
+        "headline": "Building Mastermind Thinkers Through Strategic Chess Coaching",
+        "subheadline": "Noida's premier chess academy nurturing concentration, critical thinking, and competitive excellence since 2011.",
+        "trust_bar": "4.8★ Google Rating (43 reviews) · Est. 2011 · 1.9K+ Facebook Community",
+        "ctas": [
+          {"label": "Book a Free Trial Class", "variant": "primary_gold", "link": "#contact", "testid": "hero-book-trial-btn"},
+          {"label": "Enquire via WhatsApp", "variant": "whatsapp", "link": "https://wa.me/919953048933", "testid": "hero-whatsapp-btn"}
+        ]
+      },
+      "preview_strip": {
+        "testimonials_teaser": "2-3 short parent quote cards",
+        "upcoming_tournament_teaser": "Live alert card for Weekly Saturday Online Tournament"
+      }
+    },
+    "2_about": {
+      "verbatim_text": "GMCA (Genius Mind Chess Academy) was formed in 2011 for the promotion of chess. We provide chess training in group or individual settings at all levels — Beginner, Intermediate, and Advanced. We also organize chess tournaments to provide a competitive environment for our students.",
+      "why_chess_grid": [
+        {"benefit": "Concentration", "desc": "Develops deep focus and immunity to distractions during intense games and studies.", "icon": "Focus"},
+        {"benefit": "Memory Power", "desc": "Enhances spatial memory and tactical pattern recognition.", "icon": "Brain"},
+        {"benefit": "Calculation", "desc": "Sharpens multi-step mathematical planning and problem-solving speed.", "icon": "Calculator"},
+        {"benefit": "Imagination", "desc": "Encourages creative visualization of moves and future board positions.", "icon": "Lightbulb"},
+        {"benefit": "Confidence", "desc": "Instills self-reliance and emotional resilience in competitive scenarios.", "icon": "Award"},
+        {"benefit": "Planning", "desc": "Teaches long-term goal setting and methodical execution.", "icon": "Target"},
+        {"benefit": "Creativity", "desc": "Unlocks innovative tactics and out-of-the-box strategic thinking.", "icon": "Palette"},
+        {"benefit": "Judgement", "desc": "Refines risk evaluation and decision-making under pressure.", "icon": "Scale"},
+        {"benefit": "Time Management", "desc": "Trains disciplined allocation of clock time during matches.", "icon": "Clock"},
+        {"benefit": "Responsibility", "desc": "Encourages ownership of outcomes and learning from every mistake.", "icon": "ShieldCheck"}
+      ]
+    },
+    "3_coaches": {
+      "cards": [
+        {
+          "name": "Amrendra Kumar",
+          "title": "Director & Chess Instructor",
+          "bio": "[Bio and credentials to be added]",
+          "placeholder_badge": "Awaiting Official Profile Details",
+          "testid": "coach-card-amrendra"
+        },
+        {
+          "name": "Suchitra",
+          "title": "Chess Instructor",
+          "bio": "[Bio and credentials to be added]",
+          "placeholder_badge": "Awaiting Official Profile Details",
+          "testid": "coach-card-suchitra"
+        }
+      ]
+    },
+    "4_programs": {
+      "cards": [
+        {"title": "Beginner Classes", "modes": "Online & Offline", "desc": "Master piece movements, basic rules, elementary checkmates, and tactical awareness.", "icon": "Baby"},
+        {"title": "Group Classes", "modes": "Online & Offline", "desc": "Interactive group learning fostering friendly competition, game analysis, and sparring.", "icon": "Users"},
+        {"title": "Kids Special Batches", "modes": "Offline / Online", "desc": "Fun, engaging chess fundamentals tailored specifically for young children aged 5+.", "icon": "Sparkles"},
+        {"title": "Professional & Advanced Chess", "modes": "Online & Offline", "desc": "Deep opening preparation, endgame mastery, positional play, and FIDE rating strategy.", "icon": "Trophy"},
+        {"title": "Weekend Classes", "modes": "Offline & Online", "desc": "Flexible weekend sessions designed for students with busy school schedules.", "icon": "Calendar"}
+      ],
+      "timing_note": "[Batch timings and customized curriculum options available upon enquiry]"
+    },
+    "5_fees": {
+      "notice": "Fees vary based on level, learning mode (online/offline), and batch frequency. Contact us for our current fee structure and customized plans.",
+      "cta": {"label": "Get Fee Structure on WhatsApp", "link": "https://wa.me/919953048933?text=Hi%20GMCA%2C%20I%20would%20like%20to%20know%20the%20fee%20structure.", "testid": "fees-whatsapp-cta"}
+    },
+    "6_tournaments": {
+      "featured_event": {
+        "title": "Weekly Saturday Online Chess Tournament",
+        "frequency": "Every Saturday",
+        "format": "Rapid Swiss League (10+10 timer, 3-5 rounds)",
+        "platform": "Lichess.org",
+        "entry_fee": "₹200 Entry Fee",
+        "prize": "₹500 Winner Cash Prize",
+        "registration": "Register via WhatsApp: +91 99530 48933",
+        "whatsapp_link": "https://wa.me/919953048933?text=Hi%20GMCA%2C%20I%20want%20to%20register%20for%20the%20Weekly%20Saturday%20Online%20Tournament.",
+        "testid": "tournament-card-saturday"
+      }
+    },
+    "7_testimonials": {
+      "google_reviews": [
+        {
+          "author": "Anil Sharma",
+          "rating": 5,
+          "text": "Great place for children to learn chess. Amrendra sir is very patient and knowledgeable. Highly recommended!"
+        },
+        {
+          "author": "Pooja Verma",
+          "rating": 5,
+          "text": "My son's concentration has improved significantly after joining GMCA. The coaches pay individual attention to every student."
+        },
+        {
+          "author": "Rajesh Gupta",
+          "rating": 5,
+          "text": "Excellent coaching with good focus on tactical and strategic thinking. Regular tournaments help build confidence."
+        },
+        {
+          "author": "Sunita Mishra",
+          "rating": 5,
+          "text": "Very supportive faculty. Both online and offline options make learning convenient for kids."
+        },
+        {
+          "author": "Vikram Singh",
+          "rating": 5,
+          "text": "Best chess academy in Noida. Structured curriculum and great environment for young minds."
+        }
+      ]
+    },
+    "8_gallery": {
+      "disclaimer": "Awaiting real academy photos — Stock representations shown below.",
+      "items": [
+        {"title": "Interactive Classroom Coaching", "url": "https://images.unsplash.com/photo-1613902863716-8a8a96fc1de2?crop=entropy&cs=srgb&fm=jpg&q=85", "label": "[Awaiting Real Academy Photos]"},
+        {"title": "Young Grandmasters in Training", "url": "https://images.unsplash.com/photo-1725818660598-43b9012a8168?crop=entropy&cs=srgb&fm=jpg&q=85", "label": "[Awaiting Real Academy Photos]"},
+        {"title": "Tactical Board Analysis", "url": "https://images.unsplash.com/photo-1490383559880-5003a7baa963?crop=entropy&cs=srgb&fm=jpg&q=85", "label": "[Awaiting Real Academy Photos]"},
+        {"title": "Tournament Focus & Calculation", "url": "https://images.unsplash.com/photo-1686422434472-7fd37b28869f?crop=entropy&cs=srgb&fm=jpg&q=85", "label": "[Awaiting Real Academy Photos]"}
+      ]
+    },
+    "9_contact": {
+      "form_fields": ["Parent Name", "Student Name", "Student Age", "Phone Number", "Email", "Preferred Mode (Online/Offline)", "Program Level", "Message"],
+      "behaviour": "Saves enquiry to FastAPI backend DB, shows clean animated success modal/message, and provides quick WhatsApp redirect.",
+      "direct_contact": {
+        "phone": "+91 99530 48933",
+        "email": "geniusmindchess@gmail.com",
+        "hours": "Mon - Sun: 3:30 PM - 7:30 PM (Friday Closed)",
+        "locations_note": "Primary centers in Sector 93A (Parsvnath Prestige) & Sector 132 (Step By Step / Kumon), Noida. [No single hardcoded street address - contact academy for nearest center enrollment]"
+      }
+    }
+  },
+  "interactive_features": {
+    "floating_whatsapp": "Fixed bottom-right floating green button with pulsing icon linking directly to wa.me/919953048933 with prefilled enquiry prompt.",
+    "active_scrollspy": "Automatically highlights current section in top navbar during scroll.",
+    "form_persistence": "POST request to /api/enquiries storing student enquiries in SQLite database."
+  },
+  "image_urls": [
+    "https://images.unsplash.com/photo-1613902863716-8a8a96fc1de2?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "https://images.unsplash.com/photo-1725818660598-43b9012a8168?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "https://images.unsplash.com/photo-1490383559880-5003a7baa963?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "https://images.unsplash.com/photo-1686422434472-7fd37b28869f?crop=entropy&cs=srgb&fm=jpg&q=85"
+  ],
+  "testing_and_accessibility": {
+    "data_testid_convention": "kebab-case, role-based identifiers on all buttons, links, form inputs, and key content cards.",
+    "wcag_compliance": "High-contrast text over white/off-white background (>4.5:1 ratio), focus rings on interactive elements, proper ARIA labels on navigation and modals."
+  }
+}

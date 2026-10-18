@@ -1,0 +1,80 @@
+{
+  "passed": 8,
+  "failed": 1,
+  "bugs": [
+    {
+      "severity": "high",
+      "criterion": "Single-page academy site shows the required section order and branded sticky navigation",
+      "evidence": "Browser check academy-section-navigation failed because getByTestId('nav-link-fees') was not found. Screenshot: /root/.emergent/automation_output/20260907_145538_702/academy-section-navigation-failure.png. API cross-check remained healthy: POST /api/enquiries returned HTTP 201 with a persisted id. Home.tsx navItems omits fees even though the #fees section exists."
+    }
+  ],
+  "action_items": [
+    "Add Fees to the desktop/mobile navItems in the required order between Programs and Tournaments, then re-run academy-section-navigation."
+  ],
+  "retest_needed": true,
+  "checks": [
+    {
+      "criterion": "Single-page academy site shows the required section order and branded sticky navigation",
+      "name": "academy-section-navigation",
+      "lane": "browser",
+      "status": "failed",
+      "evidence": "Expected nav-link-fees to be visible; locator not found. Sections themselves were present in the required order."
+    },
+    {
+      "criterion": "Official GMCA logo is used consistently",
+      "name": "academy-logo-assets",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Header, footer, and hero emblem rendered; logo/emblem image natural dimensions were non-zero and assets resolved."
+    },
+    {
+      "criterion": "Home and trust content are present",
+      "name": "academy-home-trust-content",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Hero, trial/WhatsApp CTAs, rating 4.8/43 reviews, Est. 2011, Facebook community, testimonial and tournament previews verified."
+    },
+    {
+      "criterion": "About, coaches, programs, and fees content matches the supplied facts",
+      "name": "academy-programs-coaches-fees",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Ten benefit cards, both coaches with placeholders, five programs with Online + Offline, no fee numbers, and fees WhatsApp href verified."
+    },
+    {
+      "criterion": "Tournament and testimonial content is accurate",
+      "name": "academy-tournament-testimonials",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Tournament format/platform/entry/prize/registration copy and all five named testimonial cards with 4.8/43 badge verified."
+    },
+    {
+      "criterion": "Gallery and contact details are complete and responsive",
+      "name": "academy-gallery-contact-details",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Four lazy gallery images, awaiting-photos label, phone/email/hours/location, owner-confirmation note, and Noida multi-location wording verified."
+    },
+    {
+      "criterion": "Contact form persists a valid enquiry and gives feedback",
+      "name": "academy-contact-form-saves-enquiry",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Filled form submitted successfully; inline saved message and WhatsApp link verified."
+    },
+    {
+      "criterion": "Contact form persists a valid enquiry and gives feedback",
+      "name": "test_tscheck_contact_enquiry",
+      "lane": "backend",
+      "status": "passed",
+      "evidence": "pytest HTTP tests: POST /api/enquiries valid payload returned 201 with matching fields/id/timestamp; empty required fields returned 422."
+    },
+    {
+      "criterion": "Mobile navigation and WhatsApp affordances work",
+      "name": "academy-mobile-navigation-whatsapp",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "390px viewport hamburger opened, contact link closed menu and navigated, floating WhatsApp href resolved to wa.me/919953048933."
+    }
+  ]
+}
